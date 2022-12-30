@@ -28,11 +28,17 @@ fi
 alias bcubc='brew upgrade --cask && brew cleanup'
 alias bcubo='brew update && brew outdated --cask'
 alias brewp='brew pin'
+alias bp='brew pin'
 alias brewsp='brew list --pinned'
+alias blp='brew list --pinned'
 alias bubc='brew upgrade && brew cleanup'
 alias bubo='brew update && brew outdated'
 alias bubu='bubo && bubc'
 alias buf='brew upgrade --formula'
+alias bcubo='brew update && brew outdated --cask'
+alias bcubc='brew upgrade --cask && brew cleanup'
+alias bi='brew install'
+
 
 function brews() {
   local formulae="$(brew leaves | xargs brew deps --installed --for-each)"

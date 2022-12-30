@@ -235,12 +235,24 @@ alias gma='git merge --abort'
 
 alias gp='git push'
 alias gpd='git push --dry-run'
-alias gpf='git push --force-with-lease'
-alias gpf!='git push --force'
 alias gpoat='git push origin --all && git push origin --tags'
 alias gpr='git pull --rebase'
 alias gpu='git push upstream'
 alias gpv='git push -v'
+
+# git force-push commands
+function gpf() {
+  # Read yes/no from user
+  local REPLY
+  read -r -k 1 '?Continue force-push? [y/N] '
+  # Add line break to user input
+  [[ "$REPLY" = $'\n' ]] || echo
+  # Run git force-push on affirmative reply
+  [[ "$REPLY" = [yY] ]] && command git push --force-with-lease "$@"
+}
+compdef _git gpf=git-push
+alias gpff='git push --force-with-lease'
+alias 'gpf!'='git push --force'
 
 alias gr='git remote'
 alias gra='git remote add'

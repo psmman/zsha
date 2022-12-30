@@ -117,7 +117,8 @@ plugins=(... git)
 | gma                  | git merge --abort                                                                                                                |
 | gp                   | git push                                                                                                                         |
 | gpd                  | git push --dry-run                                                                                                               |
-| gpf                  | git push --force-with-lease                                                                                                      |
+| gpf                  | `git push --force-with-lease` with confirmation prompt                                                                           |
+| gpff                 | git push --force-with-lease                                                                                                      |
 | gpf!                 | git push --force                                                                                                                 |
 | gpoat                | git push origin --all && git push origin --tags                                                                                  |
 | gpr                  | git pull --rebase                                                                                                                |

@@ -110,6 +110,7 @@ plugins=(... git)
 | gloga                | git log --oneline --decorate --graph --all                                                                                       |
 | glp                  | git log --pretty=\<format\>                                                                                                      |
 | gm                   | git merge                                                                                                                        |
+| gmff                 | git merge --ff-only                                                                                                              |
 | gmom                 | git merge origin/$(git_main_branch)                                                                                              |
 | gmtl                 | git mergetool --no-prompt                                                                                                        |
 | gmtlvim              | git mergetool --no-prompt --tool=vimdiff                                                                                         |
@@ -134,6 +135,7 @@ plugins=(... git)
 | grbom                | git rebase origin/$(git_main_branch)                                                                                             |
 | grbo                 | git rebase --onto                                                                                                                |
 | grbs                 | git rebase --skip                                                                                                                |
+| grbum                | git rebase upstream/$(git_main_branch)                                                                                           |
 | grev                 | git revert                                                                                                                       |
 | grh                  | git reset                                                                                                                        |
 | grhh                 | git reset --hard                                                                                                                 |
@@ -184,6 +186,7 @@ plugins=(... git)
 | gupav                | git pull --rebase --autostash -v                                                                                                 |
 | gupom                | git pull --rebase origin $(git_main_branch)                                                                                      |
 | gupomi               | git pull --rebase=interactive origin $(git_main_branch)                                                                          |
+| gupum                | git pull --rebase upstream $(git_main_branch)                                                                                    |
 | glum                 | git pull upstream $(git_main_branch)                                                                                             |
 | gluc                 | git pull upstream $(git_current_branch)                                                                                          |
 | gwch                 | git whatchanged -p --abbrev-commit --pretty=medium                                                                               |

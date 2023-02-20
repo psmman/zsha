@@ -15,16 +15,22 @@ plugins=(... terraform)
 
 ## Aliases
 
-| Alias | Command              |
-| ----- | -------------------- |
-| `tf`  | `terraform`          |
-| `tfa` | `terraform apply`    |
-| `tfd` | `terraform destroy`  |
-| `tff` | `terraform fmt`      |
-| `tfi` | `terraform init`     |
-| `tfo` | `terraform output`   |
-| `tfp` | `terraform plan`     |
-| `tfv` | `terraform validate` |
+| Alias | Command                    |
+| ----- | -------------------------- |
+| tf    | terraform                  |
+| tfa   | terraform apply            |
+| tfd   | terraform destroy          |
+| tff   | terraform fmt              |
+| tfi   | terraform init             |
+| tfo   | terraform output           |
+| tfp   | terraform plan             |
+| tfv   | terraform validate         |
+| tfw   | terraform workspace        |
+| tfwl  | terraform workspace list   |
+| tfwn  | terraform workspace new    |
+| tfwd  | terraform workspace delete |
+| tfws  | terraform workspace select |
+| tfwg  | terraform workspace show   |
 
 ## Prompt function
 

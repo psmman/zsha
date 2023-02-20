@@ -16,6 +16,12 @@ alias tfi='terraform init'
 alias tfo='terraform output'
 alias tfp='terraform plan'
 alias tfv='terraform validate'
+alias tfw='terraform workspace'
+alias tfwl='terraform workspace list'
+alias tfwn='terraform workspace new'
+alias tfwd='terraform workspace delete'
+alias tfws='terraform workspace select'
+alias tfwg='terraform workspace show'
 
 if (( $+commands[terraform] )); then
   autoload -U +X bashcompinit && bashcompinit
